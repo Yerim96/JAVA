@@ -1,0 +1,39 @@
+package TeamPJ;
+
+import java.util.Scanner;
+
+public class TeamPJ1 {
+
+	public static void main(String[] args) {
+
+		
+		Scanner sc= new Scanner(System.in);
+
+		int array2[] = new int[3];	 					//a,b,c를 넣어줄 int 배열 선언
+		String one = sc.nextLine();  					// int 배열 a,b,c를 String one으로 받음
+		
+		int array5[] = new int[10];  					//0~9의 숫자를 저장하기 위한 int 배열 선언
+		
+		String [] array = one.split(","); 				// abc값을 넣은 배열 one의 값을 split로 잘라줌
+		
+		for(int i=0; i<array.length; i++) {    			// array2안에 있는 int값을 출력해주기 위해 array.lenth값의 길이만큼 반복해준다.
+			array2[i] = Integer.parseInt(array[i]);  	//array2 배열 안에 있는 값을 array[i]
+		}
+		int total= array2[0]*array2[1]*array2[2];  		//total array2안에 있는 배열 값을 곱해줌
+		String total1 = String.valueOf(total);	   		//스트링 배열값 안에 곱해준 값 total을 인트값으로 바꾸어 total1에 넣어줌
+		String [] array3 = total1.split("");	  		// 곱해진 값을 split를 이용해 잘라주고, 새로운 스트링 배열에 넣어줌
+		
+		for(int i=0; i<array3.length; i++) {	  		// 잘라진 array3(total1)값의 배열크기까지 돌려줌
+			int array4[]= new int[array3.length]; 		// array3 배열길이를 인트로 선언해주고 array4에 대입
+			array4[i] = Integer.parseInt(array3[i]); 	// array3의 배열값을 인티저값으로 바꾸고 array4에 대입.
+			for(int j=0; j<10; j++) {					// 0-9의 값까지 구하기위해 10이되기전까지 돌려줌.
+				if(array4[i]==j) {						// array4의 배열을 10까지 돌려줌.
+					array5[j] += 1;						//10까지 하나씩 돌려가며 1씩 증가해줌.
+				}
+			}
+		}
+		for(int i=0; i<10; i++) {					   
+			System.out.println(array5[i]);				//값을 10번 꺼내준다.
+		}
+	}
+}	
