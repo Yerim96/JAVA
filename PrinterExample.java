@@ -2,12 +2,12 @@ package Homework;
 
 public class PrinterExample {
     public static void main(String[] args) {
-        //생성자 호출 -> 클래스명 변수이름 = new 클래스명
-        Printer printer = new Printer();
-        printer.println(10);
-        printer.println(true);
-        printer.println(5.7);
-        printer.println("홍길동");
+       //printer ㄱ객체를 사용하지 않으려면 static을 사용해야함.
+        //Printer printer = new Printer();
+        Printer.println(10); //클래스를 사용
+        Printer.println(true);
+        Printer.println(5.7);
+        Printer.println("홍길동");
 
 
 

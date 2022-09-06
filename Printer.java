@@ -7,22 +7,22 @@ public class Printer {
     //메서드 선언 -> 반환값 메소드명(매개변수){}
 
     //메서드 오버로딩
-    void println(int x){
+    static void println(int x){
      int value= x;
      System.out.println(value);
     }
 
-    void println(boolean x){
+    static void println(boolean x){
         boolean value = x;
         System.out.println(value);
     }
 
-    void println(double x){
+    static void println(double x){
         double value = x;
         System.out.println(value);
     }
 
-    void println(String x){
+    static void println(String x){
         String value = x;
         System.out.println(value);
     }
