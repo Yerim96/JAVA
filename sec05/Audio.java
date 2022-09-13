@@ -3,7 +3,7 @@ package ch08.sec05;
 public class Audio implements RemoteControl {
 	
 	private int volume; //외부에서 볼륨 값 접근하지 못하게하기.
-	
+	private int memoryVolume;
 	@Override
 	public void turnOn() {
 		// TODO Auto-generated method stub
@@ -27,4 +27,21 @@ public class Audio implements RemoteControl {
 		}
 		System.out.println("현재 Audio 볼륨"+this.volume);
 	}
+	
+	@Override
+	public int getVolume() {
+		// TODO Auto-generated method stub
+		return this.volume;
+	}
+		@Override
+		public void setMute(boolean mute) {
+			if(mute) {
+				this.memoryVolume=this.volume;
+				System.out.println("무음 처리합니다.");
+				setVolume(MIN_VOLUME);
+			}else {
+				System.out.println("무음해제합니다.");
+				this.volume=this.memoryVolume;
+			}
+		}
 }
