@@ -1,4 +1,4 @@
-package ch09.sec06.exam03;
+package ch09.sec07.exam03;
 
 public class Button {
 	//필드
