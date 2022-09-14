@@ -1,17 +1,25 @@
-package ch09.sec03.exam01;
+package ch09.sec02.exam01;
 
 public class A {
-	static class B{
-		int field=1;
-		
-		static int field2 =2 ;
-		
-		B(){
-			System.out.println("b 생성자 실행");
-		}
-		
-		void method1() {
-			System.out.println("b 메소드 실행");
+	int field;
+	B field2; //b클래스 타입으로 선언 가능.
+	
+	A(){ //생성자
+	B b = new B();
+	b.methodB();
+	}
+	
+	void methodA() {
+		B b = new B();
+		b.methodB();
+	}
+	public class B{
+		public void methodB() {
+			System.out.println("메소드 b 실행");
+			
+			}
 		}
 	}
-}
+	
+
+
