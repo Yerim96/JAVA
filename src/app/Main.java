@@ -4,7 +4,7 @@ import pack1.A;
 import pack2.B; //은닉된 
 import pack3.C;
 
-public class Main { //프로젝트형태로 참조
+public class Main { //자파일 형태로 참조.
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

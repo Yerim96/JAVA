@@ -1,4 +1,4 @@
-module my_application_2 {//my_moudule_a, my_moudule_b에 의존함을 기술. 
-	requires my_module_a;//실행하려면 필요함.
+module my_application_3 {
+	requires my_module_a; //경로를 못찾아서 에러가난다.
 	requires my_module_b;
 }
