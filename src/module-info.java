@@ -1,4 +1,4 @@
-module my_module_a {
-	exports pack1;
-	exports pack2;  //기제하지 않으면 은닉되어 합친 프로젝트의 모듈 main에서 import로 불러올수 없다.
+module my_application_2 {//my_moudule_a, my_moudule_b에 의존함을 기술. 
+	requires my_module_a;//실행하려면 필요함.
+	requires my_module_b;
 }
