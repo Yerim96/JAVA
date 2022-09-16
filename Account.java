@@ -1,22 +1,26 @@
-package Homework;
+package ch11.sec06;
 
 public class Account {
-    private int balance; //필드의 외부 접근 막기
-
-    static final int MIN_BALANCE =0;
-    static final int MAX_BALANCE =1000000;
-
-    public int getBalance(){
-        return balance;
-    }
-    public void setBalance(int balance){ //검수 메소드 선언
-        if(balance<MIN_BALANCE || balance>MAX_BALANCE){
-            return; //그대로 값을 반환
-
-        }else{
-            this.balance=balance; //범위안의 수라면 매개변수를 통해 값을 필드에 대입해줌.
-        }
-
-        }
-
+	private long balance; //private이라 필드를 읽을수있도록 게터필요함.
+	private String owner;
+	
+	public Account() {}
+	
+	public long getBalance() {
+		return balance;
+	}
+	
+	public void deposit(int money) {//예외발생조건
+		balance += money; 
+	}
+	
+	public void withdraw(int money) throws InsufficientException {//호출한쪽에서
+		if(balance < money) {
+			throw new InsufficientException("잔고 부족" + (money-balance)+ "모자람");
+			//예외발생 이유
+		}
+		 balance -=money;
+		
+	}
 }
+
