@@ -1,0 +1,30 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="HR" directorySegmentName="seg_0" id="7331C062-5B87-776D-0E24-258595BDBFE0">
+<sourceConnName>localhost-hr</sourceConnName>
+<sourceObjName>HR</sourceObjName>
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:37:31 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<schemaObject>A6BBD17B-023A-74F5-E111-2569CFB30B60</schemaObject>
+<defTableSpace>FC655EDC-B285-3157-55D4-4713A2EE86B0</defTableSpace>
+<privileges>UNLIMITED TABLESPACE, ALTER SESSION, CREATE SESSION, CREATE SYNONYM, CREATE DATABASE LINK, CREATE SEQUENCE, CREATE VIEW</privileges>
+<quotaItems>
+<QuotaItem class="oracle.dbtools.crest.model.design.storage.oracle.v10g.QuotaItemOraclev10g" name="QuotaItem1" id="2E029709-2FF3-C751-BBEF-202FBBE14EAD">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:37:31 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+</QuotaItem>
+<QuotaItem class="oracle.dbtools.crest.model.design.storage.oracle.v10g.QuotaItemOraclev10g" name="QuotaItem1" id="2DD2A09F-45F5-79C1-FF23-7B94B8AD3C4A">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:37:49 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<tableSpace>FC655EDC-B285-3157-55D4-4713A2EE86B0</tableSpace>
+</QuotaItem>
+<QuotaItem class="oracle.dbtools.crest.model.design.storage.oracle.v10g.QuotaItemOraclev10g" name="QuotaItem3" id="F5AB596A-D63F-9185-C421-77376CFE8936">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:38:26 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<tableSpace>FC655EDC-B285-3157-55D4-4713A2EE86B0</tableSpace>
+</QuotaItem>
+</quotaItems>
+</UserOraclev10g>

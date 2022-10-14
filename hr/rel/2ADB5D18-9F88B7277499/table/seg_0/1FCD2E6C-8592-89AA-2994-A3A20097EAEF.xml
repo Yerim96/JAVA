@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1FCD2E6C-8592-89AA-2994-A3A20097EAEF" schemaObject="A6BBD17B-023A-74F5-E111-2569CFB30B60" name="COUNTRIES">
+<sourceConnName>localhost-hr</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>COUNTRIES</sourceObjName>
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:41:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[country table. Contains 25 rows. References with locations table.]]></commentInRDBMS>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>9F290EF4-4228-349D-A2AE-93A777A53253</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COUNTRY_ID" id="BC51C2A0-12E3-615C-D284-C4E0F8F4B8B8">
+<sourceConnName>localhost-hr</sourceConnName>
+<sourceObjSchema>COUNTRIES</sourceObjSchema>
+<sourceObjName>COUNTRY_ID</sourceObjName>
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:41:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Primary key of countries table.]]></commentInRDBMS>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>C9C2E3F9-BCE5-CE06-BB7C-3A142311C0AB</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>COUNTRY_ID_NN</notNullConstraintName>
+</Column>
+<Column name="COUNTRY_NAME" id="F83A5CC4-02D6-59F5-5F37-9D5107D79470">
+<sourceConnName>localhost-hr</sourceConnName>
+<sourceObjSchema>COUNTRIES</sourceObjSchema>
+<sourceObjName>COUNTRY_NAME</sourceObjName>
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:41:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Country name]]></commentInRDBMS>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>9D121E60-13FD-4F57-0D4E-74A61410EDD9</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REGION_ID" id="DE6A738B-C705-68E8-C5E3-19B3CF8B0C1E">
+<sourceConnName>localhost-hr</sourceConnName>
+<sourceObjSchema>COUNTRIES</sourceObjSchema>
+<sourceObjName>REGION_ID</sourceObjName>
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:41:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Region ID for the country. Foreign key to region_id column in the departments table.]]></commentInRDBMS>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>EF52D965-8B1C-C5D3-F519-5B9E8658A0F0</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="65AEA6DA-1757-743E-2344-4375F23030D9" referredColumn="B51D6CD0-6B94-5FD8-FF61-6D2B24E5F93E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="26A4429D-88DF-37BF-3135-C16F1520DDFA" schemaObject="A6BBD17B-023A-74F5-E111-2569CFB30B60" name="COUNTRY_C_ID_PK">
+<sourceConnName>localhost-hr</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>COUNTRY_C_ID_PK</sourceObjName>
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:41:54 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>006EF838-B75A-D836-A7DD-43F4E6D4041D</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BC51C2A0-12E3-615C-D284-C4E0F8F4B8B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="19CDB062-75CC-2996-80DC-B91428B5E2F5" name="COUNTR_REG_FK">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:41:54 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE6A738B-C705-68E8-C5E3-19B3CF8B0C1E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

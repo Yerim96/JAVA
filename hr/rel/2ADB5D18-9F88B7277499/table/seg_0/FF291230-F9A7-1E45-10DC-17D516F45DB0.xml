@@ -1,0 +1,209 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FF291230-F9A7-1E45-10DC-17D516F45DB0" schemaObject="A6BBD17B-023A-74F5-E111-2569CFB30B60" name="LOCATIONS">
+<sourceConnName>localhost-hr</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>LOCATIONS</sourceObjName>
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:41:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Locations table that contains specific address of a specific office,
+warehouse, and/or production site of a company. Does not store addresses /
+locations of customers. Contains 23 rows; references with the
+departments and countries tables. ]]></commentInRDBMS>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>366BFFB8-3B48-CB74-5FAD-11C47E4D69D4</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LOCATION_ID" id="A5A9F26C-7815-D612-9489-B0764604FBC3">
+<sourceConnName>localhost-hr</sourceConnName>
+<sourceObjSchema>LOCATIONS</sourceObjSchema>
+<sourceObjName>LOCATION_ID</sourceObjName>
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:41:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Primary key of locations table]]></commentInRDBMS>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>46870C81-9E9C-3B4C-EDC2-3663345E274B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STREET_ADDRESS" id="9E5FA032-03C5-DEDC-8A38-21FBF21B44E2">
+<sourceConnName>localhost-hr</sourceConnName>
+<sourceObjSchema>LOCATIONS</sourceObjSchema>
+<sourceObjName>STREET_ADDRESS</sourceObjName>
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:41:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Street address of an office, warehouse, or production site of a company.
+Contains building number and street name]]></commentInRDBMS>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>0DF87567-7E6A-1941-DB58-9F95A6BF6607</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POSTAL_CODE" id="7A405886-58BF-560E-9363-4AB4DABBE61E">
+<sourceConnName>localhost-hr</sourceConnName>
+<sourceObjSchema>LOCATIONS</sourceObjSchema>
+<sourceObjName>POSTAL_CODE</sourceObjName>
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:41:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Postal code of the location of an office, warehouse, or production site
+of a company. ]]></commentInRDBMS>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>FE112203-0F90-2CC1-1937-60BB9F62DE84</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 BYTE</dataTypeSize>
+<ownDataTypeParameters>12 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CITY" id="908707C6-A196-DA86-28D5-F5055E8A4D80">
+<sourceConnName>localhost-hr</sourceConnName>
+<sourceObjSchema>LOCATIONS</sourceObjSchema>
+<sourceObjName>CITY</sourceObjName>
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:41:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[A not null column that shows city where an office, warehouse, or
+production site of a company is located. ]]></commentInRDBMS>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>8368025A-3982-886E-45F2-B47488853B80</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>LOC_CITY_NN</notNullConstraintName>
+</Column>
+<Column name="STATE_PROVINCE" id="AE72C7F7-DF47-6725-6C64-3D07479AE187">
+<sourceConnName>localhost-hr</sourceConnName>
+<sourceObjSchema>LOCATIONS</sourceObjSchema>
+<sourceObjName>STATE_PROVINCE</sourceObjName>
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:41:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[State or Province where an office, warehouse, or production site of a
+company is located.]]></commentInRDBMS>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>5344657D-492C-91CE-2C0E-9BD80C9513E1</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY_ID" id="14B720A1-21FA-41A2-DB56-EBD4035601A4">
+<sourceConnName>localhost-hr</sourceConnName>
+<sourceObjSchema>LOCATIONS</sourceObjSchema>
+<sourceObjName>COUNTRY_ID</sourceObjName>
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:41:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Country where an office, warehouse, or production site of a company is
+located. Foreign key to country_id column of the countries table.]]></commentInRDBMS>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>3D3106E4-49A7-F9AC-451C-9515783BA5C3</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="152B17C5-262A-CC3D-4EB1-11184511EE46" referredColumn="BC51C2A0-12E3-615C-D284-C4E0F8F4B8B8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D0AEC15F-C0FB-2696-AA6C-9E23A9EC29AE" name="LOC_ID_PK">
+<sourceConnName>localhost-hr</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>LOC_ID_PK</sourceObjName>
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:41:54 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>D34C56CF-6790-6A84-4EC3-5650B1E04CE1</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5A9F26C-7815-D612-9489-B0764604FBC3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A6A30048-7DBB-0B45-00C3-D71215A2CDF5" schemaObject="A6BBD17B-023A-74F5-E111-2569CFB30B60" name="LOC_CITY_IX">
+<sourceConnName>localhost-hr</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>LOC_CITY_IX</sourceObjName>
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:41:54 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>1564BB51-7C05-E8C6-8597-4B90BA78E5ED</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="908707C6-A196-DA86-28D5-F5055E8A4D80"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EA23369F-2494-FD38-CE53-866AA8608042" schemaObject="A6BBD17B-023A-74F5-E111-2569CFB30B60" name="LOC_COUNTRY_IX">
+<sourceConnName>localhost-hr</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>LOC_COUNTRY_IX</sourceObjName>
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:41:54 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>CFF1EA2D-36A4-DF30-DA4D-4D884B076C43</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="14B720A1-21FA-41A2-DB56-EBD4035601A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5DC3D658-7803-8410-2C5D-EE60FA05ED3C" schemaObject="A6BBD17B-023A-74F5-E111-2569CFB30B60" name="LOC_ID_PK">
+<sourceConnName>localhost-hr</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>LOC_ID_PK</sourceObjName>
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:41:54 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>A4F181A1-CCD2-0704-8CE2-E3838802775C</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5A9F26C-7815-D612-9489-B0764604FBC3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0BAB265F-26AC-615D-E8D2-3BFF022426BA" schemaObject="A6BBD17B-023A-74F5-E111-2569CFB30B60" name="LOC_STATE_PROVINCE_IX">
+<sourceConnName>localhost-hr</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>LOC_STATE_PROVINCE_IX</sourceObjName>
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:41:54 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>3937510A-9D64-19DC-0209-6B6F02161175</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AE72C7F7-DF47-6725-6C64-3D07479AE187"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FC2648A1-8D10-235C-1CD8-32CC81E3B12F" name="LOC_C_ID_FK">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:41:54 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="14B720A1-21FA-41A2-DB56-EBD4035601A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

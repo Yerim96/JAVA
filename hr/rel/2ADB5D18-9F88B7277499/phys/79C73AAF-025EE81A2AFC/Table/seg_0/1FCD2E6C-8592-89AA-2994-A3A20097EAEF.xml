@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="COUNTRIES" directorySegmentName="seg_0" id="1FCD2E6C-8592-89AA-2994-A3A20097EAEF">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:41:54 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<schemaObject>A6BBD17B-023A-74F5-E111-2569CFB30B60</schemaObject>
+<iotPctThreshold>50</iotPctThreshold>
+<logging>YES</logging>
+<organization>INDEX</organization>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>C9F9A2DE-1F0A-6AA1-CF67-C20C5180FA8B</segment>
+<tableSpace>FC655EDC-B285-3157-55D4-4713A2EE86B0</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="COUNTRY_ID" id="BC51C2A0-12E3-615C-D284-C4E0F8F4B8B8">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:41:54 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="REGION_ID" id="DE6A738B-C705-68E8-C5E3-19B3CF8B0C1E">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:41:54 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COUNTRY_NAME" id="F83A5CC4-02D6-59F5-5F37-9D5107D79470">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:41:54 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="COUNTR_REG_FK" id="19CDB062-75CC-2996-80DC-B91428B5E2F5">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:41:54 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="COUNTRY_C_ID_PK" id="26A4429D-88DF-37BF-3135-C16F1520DDFA">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:41:54 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<schemaObject>A6BBD17B-023A-74F5-E111-2569CFB30B60</schemaObject>
+<segment>C9F9A2DE-1F0A-6AA1-CF67-C20C5180FA8B</segment>
+<tableSpace>FC655EDC-B285-3157-55D4-4713A2EE86B0</tableSpace>
+<indexSegment>C9F9A2DE-1F0A-6AA1-CF67-C20C5180FA8B</indexSegment>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

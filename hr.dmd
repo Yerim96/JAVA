@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="hr" id="2E39746F-BAAF-8AAF-8F26-CCDEA938D6EE" version="3.5">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:37:04 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>2E39746F-BAAF-8AAF-8F26-CCDEA938D6EE</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="D192896C-35A8-B0CE-BEEE-B9FA8264EED1">
+<designStoragePath>C:\</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

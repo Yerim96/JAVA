@@ -1,0 +1,159 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="72540BE5-82D3-0190-B416-DF7671BFAB82" schemaObject="A6BBD17B-023A-74F5-E111-2569CFB30B60" name="DEPARTMENTS">
+<sourceConnName>localhost-hr</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>DEPARTMENTS</sourceObjName>
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:41:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Departments table that shows details of departments where employees
+work. Contains 27 rows; references with locations, employees, and job_history tables.]]></commentInRDBMS>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>46C70988-7C04-682D-A531-17330C666800</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DEPARTMENT_ID" id="1B176A03-3420-AE24-E6D4-9B850147F372">
+<sourceConnName>localhost-hr</sourceConnName>
+<sourceObjSchema>DEPARTMENTS</sourceObjSchema>
+<sourceObjName>DEPARTMENT_ID</sourceObjName>
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:41:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Primary key column of departments table.]]></commentInRDBMS>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>3813B190-75F1-8395-B4B7-CC3BA6F8BC0D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPARTMENT_NAME" id="0E02E27A-AD30-3A01-E3F6-A564487801E9">
+<sourceConnName>localhost-hr</sourceConnName>
+<sourceObjSchema>DEPARTMENTS</sourceObjSchema>
+<sourceObjName>DEPARTMENT_NAME</sourceObjName>
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:41:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[A not null column that shows name of a department. Administration,
+Marketing, Purchasing, Human Resources, Shipping, IT, Executive, Public
+Relations, Sales, Finance, and Accounting. ]]></commentInRDBMS>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>F5243A81-5BEB-B983-734C-4E18A4BBD316</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>DEPT_NAME_NN</notNullConstraintName>
+</Column>
+<Column name="MANAGER_ID" id="62E4045B-5D96-83A8-9F94-431E73311229">
+<sourceConnName>localhost-hr</sourceConnName>
+<sourceObjSchema>DEPARTMENTS</sourceObjSchema>
+<sourceObjName>MANAGER_ID</sourceObjName>
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:41:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Manager_id of a department. Foreign key to employee_id column of employees table. The manager_id column of the employee table references this column.]]></commentInRDBMS>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>DFBB9AE1-1B58-8F68-1F8C-D130BC2E7CCD</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EF1D7621-B8C6-D365-FFAB-74CAB44285C4" referredColumn="AE9D8D49-BC6B-B298-F6E8-FA6E99B75733"/>
+</associations>
+</Column>
+<Column name="LOCATION_ID" id="6C9BDFD4-CCA6-CA4D-E35A-084794CEE9F5">
+<sourceConnName>localhost-hr</sourceConnName>
+<sourceObjSchema>DEPARTMENTS</sourceObjSchema>
+<sourceObjName>LOCATION_ID</sourceObjName>
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:41:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Location id where a department is located. Foreign key to location_id column of locations table.]]></commentInRDBMS>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>155AD09F-B380-79FF-4CBD-0848CC4322A7</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CEA23F23-3065-B78A-A3F1-3F9C965E94E4" referredColumn="A5A9F26C-7815-D612-9489-B0764604FBC3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="23E045AB-9A6E-465A-24EE-12CD2C7ED7AC" name="DEPT_ID_PK">
+<sourceConnName>localhost-hr</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>DEPT_ID_PK</sourceObjName>
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:41:54 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>7EB20266-3385-3BBA-983B-4D7389250BA2</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B176A03-3420-AE24-E6D4-9B850147F372"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="01E89036-C977-4582-9A0A-C5251220F676" schemaObject="A6BBD17B-023A-74F5-E111-2569CFB30B60" name="DEPT_ID_PK">
+<sourceConnName>localhost-hr</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>DEPT_ID_PK</sourceObjName>
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:41:54 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>1335203A-3536-8F9A-8F63-1786A090D211</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B176A03-3420-AE24-E6D4-9B850147F372"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="22B5A711-591E-140B-289C-FE74159805FD" schemaObject="A6BBD17B-023A-74F5-E111-2569CFB30B60" name="DEPT_LOCATION_IX">
+<sourceConnName>localhost-hr</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>DEPT_LOCATION_IX</sourceObjName>
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:41:54 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>0076CB93-291C-425B-96A9-47F3EA49E2CE</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C9BDFD4-CCA6-CA4D-E35A-084794CEE9F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9913F91A-E89D-7E38-0827-5E7884BA276D" name="DEPT_LOC_FK">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:41:54 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C9BDFD4-CCA6-CA4D-E35A-084794CEE9F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E86E12D7-FDFD-37F9-05D5-EC58C1C3DD64" name="DEPT_MGR_FK">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-10-14 06:41:54 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62E4045B-5D96-83A8-9F94-431E73311229"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
